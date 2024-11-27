@@ -1,0 +1,568 @@
+:root {
+    --firstfont: Poppins, sans-serif;
+    --secondfont: Montserrat, sans-serif;
+    --fontcolor: rgb(116, 129, 130)
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: var(--firstfont);
+    font-size: 15px;
+    color: var(--fontcolor);
+}
+
+.section-head h2 {
+    font-family: var(--secondfont);
+    font-size: 40px;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.section-head h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+/* Start Navbar */
+.navbar-brand {
+    font-family: var(--secondfont);
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 26px !important;
+}
+
+.collapse li a {
+    font-family: var(--firstfont);
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    padding: 8px 0 0 0 !important;
+}
+
+.collapse li {
+    padding: .625rem 0 .625rem 1.25rem;
+}
+
+/* End NavBar */
+/* Stert Header */
+.header {
+    background-image: url(../imgs/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header .head-layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.header-content h1 {
+    font-family: var(--secondfont);
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 800;
+}
+
+.header-content span {
+    font-family: var(--secondfont);
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 72px;
+}
+
+.header-content span::after {
+    content: "";
+    font-weight: 400;
+    font-size: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 5s infinite;
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+@keyframes typewriter {
+    0% {
+        content: " ";
+    }
+
+    5% {
+        content: "Lar";
+        transition: all 1s;
+    }
+
+    10% {
+        content: "Larry ";
+    }
+
+    15% {
+        content: "Larry Dani";
+    }
+
+    20% {
+        content: "Larry Daniels";
+    }
+
+    25% {
+        content: "Larry Dani";
+    }
+
+    30% {
+        content: "Larry ";
+    }
+
+    35% {
+        content: "Lar";
+    }
+
+    40% {
+        content: " ";
+    }
+
+    45% {
+        content: "Deve";
+    }
+
+    50% {
+        content: "Develop";
+    }
+
+    55% {
+        content: "Developer";
+    }
+
+    60% {
+        content: "Develop";
+    }
+
+    65% {
+        content: "Deve";
+    }
+
+    70% {
+        content: " ";
+    }
+
+    75% {
+        content: "Des";
+    }
+
+    80% {
+        content: "Design";
+    }
+
+    85% {
+        content: "Designer";
+    }
+
+    90% {
+        content: "Design";
+    }
+
+    95% {
+        content: "Des";
+    }
+
+    100% {
+        content: " ";
+    }
+
+}
+
+.header-social a i {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* End Header */
+/* Start About */
+.about .inner-img {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.about .inner-img::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    z-index: -1;
+}
+
+.about .inner-content h3 {
+    font-family: var(--secondfont);
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(52, 52, 52);
+}
+
+.about .inner-content>span {
+    font-family: var(--firstfont);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.progress-bar {
+    background-color: rgb(28, 28, 28);
+}
+
+.progress {
+    height: 25px;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, .15) inset;
+
+}
+
+.moving-1 {
+    animation: moving-br1 1s normal;
+}
+
+@keyframes moving-br1 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 95%;
+    }
+}
+
+.moving-2 {
+    animation: moving-br2 1s normal;
+}
+
+@keyframes moving-br2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+.moving-3 {
+    animation: moving-br3 1s normal;
+}
+
+@keyframes moving-br3 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+.inner-btt button:nth-child(1):hover {
+    background-color: white;
+    color: black;
+}
+.inner-btt a:nth-child(2):hover button{
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    font-family: var(--firstfont);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 30px;
+}
+
+/* End About */
+/* Start Services */
+.services {
+    background-color: #f7f7f7;
+}
+
+.services .service-head {
+    margin-bottom: 80px;
+}
+
+.serv-card {
+    padding: 50px 20px;
+}
+
+.serv-card i {
+    font-size: 30px;
+    background-color: #f7f7f7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.serv-card:hover i {
+    background-color: black;
+    color: #f7f7f7;
+    transition: all .7s;
+}
+
+/* End Services */
+/* Start Portfolio */
+.nav-item .nav-link {
+    background-color: unset !important;
+    color: #000000 !important;
+    font-family: var(--firstfont);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.portfolio li button {
+    padding: .625rem 0 0 0;
+}
+
+.portfolio .nav-item .active {
+    border-bottom: 3px solid #000000;
+    border-radius: 0;
+}
+
+.port-content {
+    position: relative;
+}
+
+.layer-content {
+    background-color: rgb(255, 255, 255, .9);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.layer-content h6 {
+    font-family: var(--secondfont);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.layer-content i {
+    font-size: 14px;
+    background-color: black;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.layer-content i:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+.port-content:hover .layer-content {
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* End Portfolio */
+/* Start Clients */
+.clients {
+    background-color: #f7f7f7;
+}
+
+.carousel-item blockquote p {
+    padding: 0 190px;
+}
+
+.carousel-item blockquote h5 {
+    font-family: var(--secondfont);
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(52, 52, 52);
+}
+
+.carousel-item blockquote span {
+    font-family: var(--firstfont);
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    margin: 10px 10px 0;
+}
+
+/* End Clients */
+/* Start Numbers */
+.num-content h5 {
+    font-family: var(--secondfont);
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+/* End Numbers */
+/* Start Our Team */
+.team {
+    background-color: #f7f7f7;
+}
+
+.layer-links i {
+    background-color: black;
+    color: #ffffff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.layer-links i:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid black;
+}
+
+.layer {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 105px;
+    opacity: 0;
+    transition: all .5s;
+    transform: rotatey(180deg) scale(0.5, 0.5);
+}
+
+.card:hover .layer {
+    opacity: 1;
+    cursor: pointer;
+    transform: rotatey(0deg);
+}
+
+.card-img img {
+    transition: all .5s;
+    width: 100%;
+}
+
+.card-img:hover img {
+    transform: scale(1.2);
+}
+
+/* End Our Team */
+/* Start Contact Us */
+.contact-info i {
+    background-color: rgb(238, 238, 238);
+    color: #000000;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: all .5s;
+}
+
+.contact-info:hover i {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.contact-info h5 {
+    font-family: var(--secondfont);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+form input,
+textarea {
+    background-color: rgb(238, 238, 238);
+}
+
+form input {
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    outline: unset;
+}
+
+textarea {
+    padding-bottom: 80px !important;
+    width: 100%;
+    max-width: 100%;
+    max-height: 160px;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    outline: unset;
+    resize: both;
+}
+
+/* .form-control:focus {
+    color:unset;
+    background-color: unset;
+    border-color:unset;
+    border: none;
+    outline: none;
+    box-shadow: none
+} */
+/* End Contact Us */
+/* Start Footer */
+.footer {
+    background-color: #1C1C1C;
+}
+
+.footer .inner p {
+    font-size: 13px;
+}
+
+/* End Footer */
+/* Meadia Quary */
+@media (max-width:992px) {
+    blockquote>p {
+        padding: 16px 0 0 !important;
+    }
+}
